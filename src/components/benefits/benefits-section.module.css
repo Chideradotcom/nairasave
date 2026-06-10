@@ -1,0 +1,96 @@
+.benefitsSection {
+  max-width: var(--space-container-max);
+  margin: 0 auto;
+  padding: 80px var(--space-margin-mobile);
+}
+
+.benefitsHeader {
+  max-width: 672px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.benefitsTitle {
+  margin: 0;
+  color: var(--color-on-surface);
+  font-family: var(--font-inter);
+  font-size: var(--font-size-headline-md);
+  font-weight: var(--font-weight-headline-md);
+  line-height: var(--line-height-headline-md);
+}
+
+.benefitsDescription {
+  max-width: 672px;
+  margin: 16px auto 0;
+  color: var(--color-on-surface-variant);
+  font-family: var(--font-inter);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-body-md);
+  line-height: var(--line-height-body-md);
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-gutter);
+}
+
+.benefitCard {
+  min-height: 244px;
+  padding: 32px;
+  border: 1px solid rgb(195 198 215 / 0.3);
+  border-radius: 16px;
+  background: var(--color-surface-container-lowest);
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.03);
+  transition: box-shadow 300ms ease, transform 300ms ease;
+}
+
+.benefitCard:hover {
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.08);
+  transform: translateY(-2px);
+}
+
+.benefitIconWrap {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  background: rgb(0 74 198 / 0.1);
+  color: var(--color-primary);
+}
+
+.benefitIcon {
+  font-size: 32px;
+}
+
+.benefitTitle {
+  margin: 0 0 16px;
+  color: var(--color-on-surface);
+  font-family: var(--font-inter);
+  font-size: var(--font-size-headline-sm);
+  font-weight: var(--font-weight-headline-sm);
+  line-height: var(--line-height-headline-sm);
+}
+
+.benefitDescription {
+  margin: 0;
+  color: var(--color-on-surface-variant);
+  font-family: var(--font-inter);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-body-md);
+  line-height: var(--line-height-body-md);
+}
+
+@media (min-width: 768px) {
+  .benefitsSection {
+    padding-right: var(--space-margin-desktop);
+    padding-left: var(--space-margin-desktop);
+  }
+
+  .benefitsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
