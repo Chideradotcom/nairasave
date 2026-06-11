@@ -7,9 +7,10 @@ function App() {
   return(
     <>
       <Navbar/>
-      
+
       <Converter/>
       <BenefitsSection/>
+      
     </>
   )
 }

@@ -8,6 +8,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  
   return (
     <nav className={styles.navbarContainer}>
       <div className={styles.navbarInner}>
