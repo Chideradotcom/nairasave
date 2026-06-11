@@ -1,15 +1,15 @@
 # NairaSave — User Acquisition Landing Page & Savings Estimator
 
-Welcome to the production repository for **NairaSave**, a premium, high-fidelity single-page user acquisition landing page. This platform acts as an early signup mechanism for a fictional fintech startup allowing users to build dollar-denominated wealth while effortlessly calculating equivalent value in Naira[cite: 651, 652].
+Welcome to the production repository for **NairaSave**, a premium, high-fidelity single-page user acquisition landing page. This platform acts as an early signup mechanism for a fictional fintech startup allowing users to build dollar-denominated wealth while effortlessly calculating equivalent value in Naira
 
-This project was built from scratch as part of a high-pressure 48-hour design sprint for **Week 1 (Pre-Launch Phase)** of the **Nigerian Tech Talent Spotlight (NTTS)**[cite: 644, 648, 649].
+This project was built from scratch as part of a high-pressure 48-hour design sprint for **Week 1 (Pre-Launch Phase)** of the **Nigerian Tech Talent Spotlight (NTTS)**
 
 ---
 
 ## Purpose of the Application
 The application is engineered to operate as a high-converting marketing framework for an upcoming mobile dollar-savings product[cite: 651]. It fulfills two central professional-grade objectives[cite: 653]:
-1. **User Acquisition & Conversion Strategy:** Features a clear value proposition, prominent interactive call-to-actions (CTAs), lead capture mechanisms, and structural trust configurations to capture early user intent ("Notify Me" / "Join Waitlist")[cite: 654, 655, 665].
-2. **Instant Parallel Market Calculator:** An embedded mathematical interactive widget demonstrating clean user data entries where typed USD savings inputs instantly calculate the exact local Naira valuation based on a static parallel exchange rate[cite: 655, 663].
+1. **User Acquisition & Conversion Strategy:** Features a clear value proposition, prominent interactive call-to-actions (CTAs), lead capture mechanisms, and structural trust configurations to capture early user intent ("Notify Me" / "Join Waitlist")
+2. **Instant Parallel Market Calculator:** An embedded mathematical interactive widget demonstrating clean user data entries where typed USD savings inputs instantly calculate the exact local Naira valuation based on a static parallel exchange rate
 
 ---
 
@@ -28,14 +28,14 @@ This architecture completely eliminates heavy third-party utility frameworks or 
 
 ## System Requirements & Specifications
 
-To comply with the engineering protocols of the design sprint brief, the application strictly respects the following system parameters[cite: 659]:
+To comply with the engineering protocols of the design sprint brief, the application strictly respects the following system parameters:
 
 | Requirement Area | Specification Implemented |
 | :--- | :--- |
-| **Layout Semantics** | Strictly HTML5 layout markup elements (`<header>`, `<main>`, `<section>`, `<footer>`) to bypass "div soup" patterns[cite: 661]. |
-| **Calculator Mechanics** | Numerical float constraints mapping instantly on state adjustments without manual click/trigger button overhead[cite: 662, 664]. |
-| **Hardcoded Exchange Rate** | Locked parallel rate tracking strictly at **1 USD = 1,550 NGN**[cite: 663]. |
-| **Mobile Adaptability** | Viewport responsive layouts handling device constraints down to a thin 390px horizontal screen width with zero horizontal scroll breakage[cite: 662]. |
+| **Layout Semantics** | Strictly HTML5 layout markup elements (`<header>`, `<main>`, `<section>`, `<footer>`) to bypass "div soup" patterns |
+| **Calculator Mechanics** | Numerical float constraints mapping instantly on state adjustments without manual click/trigger button overhead |
+| **Hardcoded Exchange Rate** | Locked parallel rate tracking strictly at **1 USD = 1,550 NGN** |
+| **Mobile Adaptability** | Viewport responsive layouts handling device constraints down to a thin 390px horizontal screen width with zero horizontal scroll breakage. |
 | **Touch Layout Target** | Minimum interaction bounds of 48px on form inputs and control buttons for physical device mobile usage. |
 
 ---
