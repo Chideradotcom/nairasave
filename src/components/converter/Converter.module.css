@@ -186,7 +186,7 @@
 
   .syncIconDivider {
     margin: 0 auto;
-    transform: rotate(90deg); /* Turn symbol pointing down when inputs stack */
+    transform: rotate(90deg);
   }
 
   .textRightDesktop {
