@@ -1,11 +1,13 @@
 import "./App.css";
 import BenefitsSection from "./components/benefits/benefits-section";
+import { Converter } from "./components/converter/Converter";
 
 function App() {
   return(
-    <div>
+    <>
+      <Converter/>
       <BenefitsSection/>
-    </div>
+    </>
   )
 }
 
