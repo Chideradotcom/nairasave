@@ -18,7 +18,6 @@ export function Converter() {
 
   return (
     <section className={styles.converterSection}>
-      {/* Self-contained widget styled as an article */}
       <article className={styles.converterCard}>
         <header className={styles.cardHeader}>
           <h2 className={styles.savingsTitle}>Instant Savings Estimates</h2>
