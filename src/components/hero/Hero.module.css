@@ -1,0 +1,146 @@
+.head {
+    display: flex;
+    margin: 5%;
+}
+
+.text {
+    margin-block: 5%;
+}
+
+.top_text {
+    width: 48%;
+}
+
+.text h1{
+    font-size: var(--font-size-display-lg);
+    line-height: var(--line-height-headline-md);
+}
+
+.dollars {
+    color:  var( --color-primary);
+}
+
+.input {
+    padding-inline: 20px;
+    padding-block: 15px;   
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid var(--color-slate-300);
+    font-size: var( --font-size-headline);
+    margin-right: 8px;
+}
+
+.btn {
+    width: 20%;
+    height: 8vh;
+    background-color: var(  --color-surface-tint);
+    outline: none;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-slate-300);
+    color: var(--color-on-primary);
+    font-weight: bold;
+    font-size: var( --font-size-headline);
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.views {
+    margin-top: 8%;
+}
+
+.circle,
+.circl,
+.circ {
+    background-color: var(--color-slate-200);
+    padding-inline: 12px;
+    padding-block: 2px;  
+    border-radius: var(--radius-full);
+    cursor: pointer;
+}
+
+.circl {
+    background-color: var(--color-slate-300);
+}
+
+.circ {
+    background-color: var(--color-slate-400);
+}
+
+.views_txt {
+    padding-left: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main img {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: var(--radius-lg);
+}
+
+@media (max-width: 884px) {
+    .text {
+        margin-block: 3%;
+    }
+
+    .top_text {
+        width: 80%;
+    }   
+    
+    .top_text p {
+        font-size: 1.8rem;
+    }
+
+    input {
+        padding-inline: 22px;
+        padding-block: 19px;   
+        font-size: var( --font-size-headline);
+    }
+
+    .btn {
+        width: 23%;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 26%;
+        height: 5vh;
+    }
+
+    main {
+        margin-block: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        display: block;
+        margin: 5%;
+    }
+
+    .top_text {
+        width: 100%;
+    } 
+
+    .top_text p {
+        font-size: 2.1rem;
+    }
+
+   .input {
+        width: 100%;
+        height: 10vh;
+        margin-bottom: 14px;
+        font-size: 1.8rem;
+   }
+
+   .btn {
+        width: 100%;
+        height: 10vh;
+        font-size: var( --font-size-headline-md);
+    }
+
+    main img {
+        width: 100%;
+    }
+}

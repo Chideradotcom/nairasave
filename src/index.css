@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
+
+:root {
+  /* Font families */
+  --font-inter: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-icons: "Material Symbols Outlined";
+
+  /* Primary */
+  --color-primary: #004ac6;
+  --color-primary-container: #2563eb;
+  --color-primary-fixed: #dbe1ff;
+  --color-primary-fixed-dim: #b4c5ff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #eeefff;
+  --color-on-primary-fixed: #00174b;
+  --color-on-primary-fixed-variant: #003ea8;
+
+  /* Secondary */
+  --color-secondary: #006c49;
+  --color-secondary-container: #6cf8bb;
+  --color-secondary-fixed: #6ffbbe;
+  --color-secondary-fixed-dim: #4edea3;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #00714d;
+  --color-on-secondary-fixed: #002113;
+  --color-on-secondary-fixed-variant: #005236;
+
+  /* Tertiary */
+  --color-tertiary: #943700;
+  --color-tertiary-container: #bc4800;
+  --color-tertiary-fixed: #ffdbcd;
+  --color-tertiary-fixed-dim: #ffb596;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #ffede6;
+  --color-on-tertiary-fixed: #360f00;
+  --color-on-tertiary-fixed-variant: #7d2d00;
+
+  /* Surfaces */
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+  --color-surface: #f8f9ff;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface-variant: #d3e4fe;
+  --color-surface-tint: #0053db;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #434655;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-inverse-primary: #b4c5ff;
+
+  /* Borders and states */
+  --color-outline: #737686;
+  --color-outline-variant: #c3c6d7;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  /* Supporting colors used in the design */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-slate-50: #f8fafc;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+
+  /* Radius */
+  --radius-md: 16px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-unit: 4px;
+  --space-touch-target-min: 48px;
+  --space-margin-mobile: 20px;
+  --space-gutter: 24px;
+  --space-margin-desktop: 64px;
+  --space-container-max: 1280px;
+
+  /* Typography tokens */
+  --font-size-body-md: 16px;
+  --line-height-body-md: 1.5;
+  --font-weight-body-md: 400;
+
+  --font-size-body-lg: 18px;
+  --line-height-body-lg: 1.6;
+  --font-weight-body-lg: 400;
+
+  --font-size-label-caps: 12px;
+  --line-height-label-caps: 1;
+  --font-weight-label-caps: 700;
+  --letter-spacing-label-caps: 0.05em;
+
+  --font-size-headline-sm: 24px;
+  --line-height-headline-sm: 1.3;
+  --font-weight-headline-sm: 600;
+
+  --font-size-headline-md: 30px;
+  --line-height-headline-md: 1.2;
+  --font-weight-headline-md: 700;
+
+  --font-size-display-lg-mobile: 36px;
+  --line-height-display-lg-mobile: 1.2;
+  --font-weight-display-lg-mobile: 800;
+  --letter-spacing-display-lg-mobile: -0.02em;
+
+  --font-size-display-lg: 48px;
+  --line-height-display-lg: 1.1;
+  --font-weight-display-lg: 800;
+  --letter-spacing-display-lg: -0.02em;
+
+  --font-size-price-display: 40px;
+  --line-height-price-display: 1;
+  --font-weight-price-display: 700;
+  --letter-spacing-price-display: -0.01em;
+
+  /* Fluid typography */
+  --font-size-display-fluid: clamp(
+    var(--font-size-display-lg-mobile),
+    30px + 1.5625vw,
+    var(--font-size-display-lg)
+  );
+  --line-height-display-fluid: clamp(
+    var(--line-height-display-lg),
+    1.3 - 0.2604vw,
+    var(--line-height-display-lg-mobile)
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-inter);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-body-md);
+  line-height: var(--line-height-body-md);
+}
+
+::selection {
+  background: var(--color-primary-fixed);
+  color: var(--color-on-primary-fixed);
+}
+
+.material-symbols-outlined {
+  direction: ltr;
+  display: inline-block;
+  font-family: var(--font-icons);
+  font-feature-settings: "liga";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}

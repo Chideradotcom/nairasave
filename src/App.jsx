@@ -1,12 +1,15 @@
 import "./App.css";
-import Reason from "./component/reason/Page";
-import { Route, Routes } from 'react-router-dom'
+import BenefitsSection from "./components/benefits/benefits-section";
+import { Converter } from "./components/converter/Converter";
+import Hero from "./components/hero/Hero";
 
 function App() {
-  return (
-    <Routes>
-      <Route path='/' element={<Reason /> }  />
-    </Routes>
+  return(
+    <>
+      <Hero />
+      <Converter/>
+      <BenefitsSection/>
+    </>
   )
 }
 
