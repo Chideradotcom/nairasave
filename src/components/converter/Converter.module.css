@@ -64,7 +64,7 @@
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   border: 0;
   font-size: var(--font-size-label-caps);
   font-weight: var(--font-weight-label-caps);
