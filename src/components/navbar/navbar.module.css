@@ -1,0 +1,188 @@
+/* Container and Layout */
+.navbarContainer {
+  width: 100%;
+  background: linear-gradient(180deg, #f4f7fc 0%, #ffffff 100%);
+  padding: 20px 40px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbarInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.brandLogo {
+  color: #0052cc;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Combined wrapper for menu links and button */
+.navMenuWrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Unordered list styling */
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #505f79;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navItem a:hover {
+  color: #0052cc;
+}
+
+/* Active Indicator */
+.navItem.active {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.navItem.active a {
+  color: #0052cc;
+  font-weight: 600;
+}
+
+.navItem.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0052cc;
+  border-radius: 2px;
+}
+
+/* Button Styling */
+.waitlistBtn {
+  background-color: transparent;
+  color: #0052cc;
+  border: 2px solid #0052cc;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.waitlistBtn:hover {
+  background-color: #0052cc;
+  color: #ffffff;
+}
+
+/* Hidden by default on desktop */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #0052cc;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   Mobile Responsive Styles (Screens smaller than 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .navbarContainer {
+    padding: 16px 24px;
+  }
+
+  /* Reveal Hamburger icon */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Animate Hamburger into an 'X' when open */
+  .hamburgerActive .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburgerActive .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerActive .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* Turn the wrapper into a dropdown drawer menu */
+  .navMenuWrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    padding: 24px 0;
+    gap: 24px;
+    
+    /* Smooth slide/fade transition mechanics */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Reveal wrapper menu when triggered */
+  .menuOpen {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* Restructure inner links vertically */
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Remove horizontal underline on mobile active state for a cleaner stack layout */
+  .navItem.active::after {
+    display: none;
+  }
+
+  .ctaContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .waitlistBtn {
+    width: 100%; /* Make button full width inside container for standard mobile pattern */
+    text-align: center;
+  }
+}
