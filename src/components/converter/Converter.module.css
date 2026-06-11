@@ -41,7 +41,7 @@
 
 .calculatorCont {
   display: grid;
-  grid-template-cols: 1fr auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
   gap: 24px;
   align-items: center;
   position: relative;
@@ -180,7 +180,7 @@
   }
 
   .calculatorCont {
-    grid-template-cols: 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
