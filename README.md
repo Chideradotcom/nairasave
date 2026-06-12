@@ -7,7 +7,7 @@ This project was built from scratch as part of a high-pressure 48-hour design sp
 ---
 
 ## Purpose of the Application
-The application is engineered to operate as a high-converting marketing framework for an upcoming mobile dollar-savings product[cite: 651]. It fulfills two central professional-grade objectives[cite: 653]:
+The application is engineered to operate as a high-converting marketing framework for an upcoming mobile dollar-savings product[cite: 651]. It fulfills two central professional-grade objectives:
 1. **User Acquisition & Conversion Strategy:** Features a clear value proposition, prominent interactive call-to-actions (CTAs), lead capture mechanisms, and structural trust configurations to capture early user intent ("Notify Me" / "Join Waitlist")
 2. **Instant Parallel Market Calculator:** An embedded mathematical interactive widget demonstrating clean user data entries where typed USD savings inputs instantly calculate the exact local Naira valuation based on a static parallel exchange rate
 
@@ -46,7 +46,7 @@ To comply with the engineering protocols of the design sprint brief, the applica
 Instead of enforcing heavy synchronous lifecycle hooks or matching binary state variables (`usdAmount` and `nairaAmount` updating in tandem), the calculator implements a **Derived State pattern**. The Naira output value is evaluated on-the-fly directly inside the render cycle. When a user creates a layout entry or typing event inside the input element, React flags the variable change and renders the formatted conversion output immediately on the next layout pass—eliminating state race conditions or UI input stutter.
 
 ### 2. Desktop-First to Mobile Grid Flipping
-To guarantee compatibility with Safari, Chrome, and Firefox mobile browser viewports, side-by-side elements (such as the Hero split-layout and the 3-column benefits cards) utilize a fluid percentage structure[cite: 691]. At a layout breakpoint of `768px`, the grid system automatically forces elements to stack vertically. The form components are defensively prioritized to shift above image mockups on phones, ensuring that call-to-actions are never buried beneath visual assets.
+To guarantee compatibility with Safari, Chrome, and Firefox mobile browser viewports, side-by-side elements (such as the Hero split-layout and the 3-column benefits cards) utilize a fluid percentage structure. At a layout breakpoint of `768px`, the grid system automatically forces elements to stack vertically. The form components are defensively prioritized to shift above image mockups on phones, ensuring that call-to-actions are never buried beneath visual assets.
 
 ---
 
