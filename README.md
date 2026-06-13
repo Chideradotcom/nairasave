@@ -7,7 +7,7 @@ This project was built from scratch as part of a high-pressure 48-hour design sp
 ---
 
 ## Purpose of the Application
-The application is engineered to operate as a high-converting marketing framework for an upcoming mobile dollar-savings product[cite: 651]. It fulfills two central professional-grade objectives:
+The application is engineered to operate as a high-converting marketing framework for an upcoming mobile dollar-savings product. It fulfills two central professional-grade objectives:
 1. **User Acquisition & Conversion Strategy:** Features a clear value proposition, prominent interactive call-to-actions (CTAs), lead capture mechanisms, and structural trust configurations to capture early user intent ("Notify Me" / "Join Waitlist")
 2. **Instant Parallel Market Calculator:** An embedded mathematical interactive widget demonstrating clean user data entries where typed USD savings inputs instantly calculate the exact local Naira valuation based on a static parallel exchange rate
 
