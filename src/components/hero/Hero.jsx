@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import herobg from "../../assets/unnamed.jpg"
 import styles from "../hero/Hero.module.css"
 
@@ -21,6 +22,11 @@ const Hero = () => {
                     Notify Me
                 </button>
             </form>
+            <div style={{ marginTop: '20px' }}>
+                <Link to="/dashboard" className={styles.dashboardBtn}>
+                    Go to Dashboard &rarr;
+                </Link>
+            </div>
             <div className={styles.views}>
                 <span className={styles.circle}></span>
                 <span  className={styles.circl}></span>
