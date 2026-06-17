@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 export function Navbar() {
@@ -47,9 +48,9 @@ export function Navbar() {
 
           {/* Call to Action Button */}
           <div className={styles.ctaContainer}>
-            <button className={styles.waitlistBtn}>
-              Join Waitlist
-            </button>
+            <Link to="/dashboard" className={styles.waitlistBtn}>
+              Go to Dashboard
+            </Link>
           </div>
         </div>
       </div>

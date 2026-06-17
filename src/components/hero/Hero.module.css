@@ -136,7 +136,33 @@ main img {
         /* font-size: var( --font-size-headline-md); */
     }
 
+    .dashboardBtn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     main img {
         width: 100%;
     }
+}
+
+.dashboardBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--color-surface-tint);
+    color: var(--color-surface-tint);
+    border-radius: var(--radius-lg);
+    font-weight: bold;
+    font-size: var(--font-size-headline);
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dashboardBtn:hover {
+    background-color: var(--color-surface-tint);
+    color: var(--color-on-primary);
 }
