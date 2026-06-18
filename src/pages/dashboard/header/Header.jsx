@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
-import { FiMenu, FiUpload } from "react-icons/fi";
+// import { FiMenu, FiUpload } from "react-icons/fi";
 
-function Header({ setOpen }) {
+function Header() {
   return (
     <header className={styles.header}>
 		<section className={styles.usd}>
