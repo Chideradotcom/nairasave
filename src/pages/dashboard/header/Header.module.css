@@ -1,25 +1,29 @@
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     padding: clamp(24px, 4vw, 32px);
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
 }
 
+/* Cards */
 .usd,
 .ngn,
 .reward {
-    padding-inline: 20px;
-    /* padding-block: 12px; */
-    width: 28%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+/* Card Headings */
 .usd h4,
 .ngn h4,
-.reward h4{
+.reward h4 {
     color: var(--color-slate-400);
     font-size: 1rem;
 }
 
+/* Hover Effects */
 .usd:hover,
 .ngn:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -28,11 +32,13 @@
     border-radius: 20px;
 }
 
+/* Sub Text */
 .sub {
     color: var(--color-slate-400);
-    font-size: .95rem;
+    font-size: 0.95rem;
 }
 
+/* Reward Card */
 .reward {
     background-color: var(--color-primary);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -41,38 +47,48 @@
     border-radius: 20px;
 }
 
-.reward h2 {
+.reward h2,
+.reward h4,
+.reward .sub {
     color: white;
 }
 
+/* ==========================
+   TABLET
+========================== */
 @media (max-width: 884px) {
-    .usd {
-        width: 32%;
+    .header {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .ngn {
-        width: 36%;
+    .reward {
+        grid-column: 1 / -1;
     }
 }
 
+/* ==========================
+   MOBILE
+========================== */
 @media (max-width: 480px) {
     .header {
-        display: block;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .reward {
+        grid-column: auto;
     }
 
     .usd,
     .ngn,
     .reward {
-       width: 100%;
-       padding-block: 12px;
-       margin-bottom: 16px;
+        padding: 16px;
     }
 
     .usd:hover,
     .ngn:hover {
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-        transform: translateY(0);
-        transition: all 0.3s ease;
+        box-shadow: none;
+        transform: none;
         border-radius: 20px;
     }
 }

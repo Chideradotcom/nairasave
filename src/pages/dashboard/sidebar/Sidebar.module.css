@@ -1,0 +1,113 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #edf2f7;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoSection h1 {
+  color: #0039a6;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.logoSection span {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background: #eaf0ff;
+  color: #0039a6;
+  font-weight: 700;
+}
+
+.apyCard {
+  margin-top: auto;
+  background: #f5f7ff;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.apyCard p {
+  font-size: 12px;
+  color: #0039a6;
+  font-weight: 700;
+}
+
+.apyCard h2 {
+  color: #0039a6;
+  margin: 10px 0;
+}
+
+.apyCard span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.closeBtn {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+
+  .sidebar {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    z-index: 1000;
+    transition: 0.3s;
+  }
+
+  .open {
+    left: 0;
+  }
+
+  .closeBtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background: none;
+    font-size: 24px;
+  }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 999;
+  }
+
+  .showOverlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+

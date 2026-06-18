@@ -1,7 +1,7 @@
- 
 import styles from "./Header.module.css";
+import { FiMenu, FiUpload } from "react-icons/fi";
 
-export default function Header() {
+function Header({ setOpen }) {
   return (
     <header className={styles.header}>
 		<section className={styles.usd}>
@@ -19,3 +19,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
