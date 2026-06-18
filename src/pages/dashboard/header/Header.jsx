@@ -10,7 +10,7 @@ function Header() {
 		</section>
 		<section className={styles.ngn}>
 			<h4>TOTAL EQUIVALENT &#40;NGN&#41; </h4>
-			<h2>₦199,200,000 <sub className={styles.sub}>@ 1,600.00</sub></h2>
+			<h2>₦199,200,000 <sub className={styles.sub}>@ 1,550.00</sub></h2>
 		</section>
 		<section className={styles.reward}>
 			<h4>TOTAL SAVINGS REWARD</h4>
