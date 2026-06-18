@@ -1,15 +1,13 @@
-/* Container and Layout */
 .navbarContainer {
   width: 100%;
   background: linear-gradient(180deg, #f4f7fc 0%, #ffffff 100%);
   padding: 20px 40px;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
   position: relative;
   z-index: 1000;
-
 }
-
 
 .navbarInner {
   max-width: 1200px;
@@ -19,7 +17,6 @@
   justify-content: space-between;
 }
 
-/* Logo styling */
 .brandLogo {
   color: #0052cc;
   font-size: 24px;
@@ -27,14 +24,12 @@
   letter-spacing: -0.5px;
 }
 
-/* Combined wrapper for menu links and button */
 .navMenuWrapper {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-/* Unordered list styling */
 .navLinks {
   list-style: none;
   display: flex;
@@ -55,7 +50,6 @@
   color: #0052cc;
 }
 
-/* Active Indicator */
 .navItem.active {
   position: relative;
   padding-bottom: 4px;
@@ -67,7 +61,7 @@
 }
 
 .navItem.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -77,7 +71,6 @@
   border-radius: 2px;
 }
 
-/* Button Styling */
 .waitlistBtn {
   background-color: transparent;
   color: #0052cc;
@@ -95,7 +88,6 @@
   color: #ffffff;
 }
 
-/* Hidden by default on desktop */
 .hamburger {
   display: none;
   background: transparent;
@@ -114,31 +106,27 @@
   transition: all 0.3s ease;
 }
 
-/* ==========================================================================
-   Mobile Responsive Styles (Screens smaller than 768px)
-   ========================================================================== */
 @media (max-width: 768px) {
   .navbarContainer {
     padding: 16px 24px;
   }
 
-  /* Reveal Hamburger icon */
   .hamburger {
     display: flex;
   }
 
-  /* Animate Hamburger into an 'X' when open */
   .hamburgerActive .bar:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
+
   .hamburgerActive .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburgerActive .bar:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
 
-  /* Turn the wrapper into a dropdown drawer menu */
   .navMenuWrapper {
     position: absolute;
     top: 100%;
@@ -149,22 +137,19 @@
     flex-direction: column;
     padding: 24px 0;
     gap: 24px;
-    
-    /* Smooth slide/fade transition mechanics */
+
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
   }
 
-  /* Reveal wrapper menu when triggered */
   .menuOpen {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
   }
 
-  /* Restructure inner links vertically */
   .navLinks {
     flex-direction: column;
     align-items: center;
@@ -172,7 +157,6 @@
     width: 100%;
   }
 
-  /* Remove horizontal underline on mobile active state for a cleaner stack layout */
   .navItem.active::after {
     display: none;
   }
@@ -184,7 +168,7 @@
   }
 
   .waitlistBtn {
-    width: 100%; /* Make button full width inside container for standard mobile pattern */
+    width: 100%;
     text-align: center;
   }
 }

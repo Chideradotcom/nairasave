@@ -1,0 +1,161 @@
+.header {
+  height: 100px;
+  background: white;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.badge {
+  margin-top: 8px;
+  background: #dcfce7;
+  color: #15803d;
+  padding: 6px 12px;
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.reportBtn {
+  border: none;
+  background: #eef2ff;
+  color: #0039a6;
+  padding: 14px 20px;
+  border-radius: 14px;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0039a6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.menuBtn {
+  display: none;
+}
+
+.header {
+  height: 100px;
+  background: white;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.badge {
+  margin-top: 8px;
+  background: #dcfce7;
+  color: #15803d;
+  padding: 6px 12px;
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.reportBtn {
+  border: none;
+  background: #eef2ff;
+  color: #0039a6;
+  padding: 14px 20px;
+  border-radius: 14px;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0039a6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 15px;
+    height: 70px;
+  }
+
+  .menuBtn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .left h1 {
+    font-size: 1.5rem;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .reportBtn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
