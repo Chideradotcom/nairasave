@@ -9,13 +9,30 @@ export default function PotentialGrowth() {
   const [commitAmount, setCommitAmount] = useState(1000);
 
   const handleCommitChange = (e) => {
-    const value = parseFloat(e.target.value);
-    setCommitAmount(isNaN(value) ? 0 : value);
+    const rawValue = e.target.value;
+    const value = parseFloat(rawValue);
+
+    if (!rawValue || isNaN(value) || value <= 0) {
+      setCommitAmount(0);
+      return;
+    }
+
+    setCommitAmount(value);
   };
 
+  const isValidAmount = commitAmount > 0;
+
   const projectedTotal = useMemo(() => {
+    if (!isValidAmount) {
+      return BASE_WEALTH;
+    }
+
     return BASE_WEALTH + commitAmount * 12 * (1 + APY / 2);
-  }, [commitAmount]);
+  }, [commitAmount, isValidAmount]);
+
+  const projectedDisplay = isValidAmount
+    ? `${Math.round(projectedTotal).toLocaleString()}`
+    : "Enter an amount to see your savings grow";
 
   return (
     <section className={styles.container}>
@@ -31,9 +48,7 @@ export default function PotentialGrowth() {
         </section>
         <section className={styles.rightLabel}>
           <p className={styles.projectedLabel}>PROJECTED TOTAL</p>
-          <p className={styles.projectedValue}>
-            ${Math.round(projectedTotal).toLocaleString()}
-          </p>
+          <p className={styles.projectedValue}>{projectedDisplay}</p>
         </section>
       </header>
       <section className={styles.inputSection}>
@@ -50,6 +65,11 @@ export default function PotentialGrowth() {
           step="100"
           min="0"
         />
+        {!isValidAmount && (
+          <p className={styles.inputError}>
+            Please enter a positive monthly amount
+          </p>
+        )}
       </section>
 
       <section
@@ -66,7 +86,9 @@ export default function PotentialGrowth() {
 
           const barInLineStyle = {
             height: `${heightPercent}%`,
-            backgroundColor: !isLast ? `rgba(0, 53, 148, ${opacity})` : undefined,
+            backgroundColor: !isLast
+              ? `rgba(0, 53, 148, ${opacity})`
+              : undefined,
           };
 
           return (
