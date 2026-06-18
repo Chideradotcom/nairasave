@@ -1,10 +1,10 @@
 .header {
-  height: 100px;
   background: white;
   padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .left {
@@ -13,13 +13,19 @@
   gap: 20px;
 }
 
-.left h1 {
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.brand h1 {
   font-size: 2.3rem;
   font-weight: 800;
+  margin: 0;
 }
 
 .badge {
-  margin-top: 8px;
   background: #dcfce7;
   color: #15803d;
   padding: 6px 12px;
@@ -27,6 +33,7 @@
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
+  margin: 0;
 }
 
 .right {
@@ -61,85 +68,30 @@
 
 .menuBtn {
   display: none;
-}
-
-.header {
-  height: 100px;
-  background: white;
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.left h1 {
-  font-size: 2.3rem;
-  font-weight: 800;
-}
-
-.badge {
-  margin-top: 8px;
-  background: #dcfce7;
-  color: #15803d;
-  padding: 6px 12px;
-  border-radius: 999px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.right {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.reportBtn {
+  background: none;
   border: none;
-  background: #eef2ff;
-  color: #0039a6;
-  padding: 14px 20px;
-  border-radius: 14px;
-  font-weight: 700;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #0039a6;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 0 15px;
-    height: 70px;
+    gap: 1rem;
   }
 
-  .menuBtn {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+  .left {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
 
-  .left h1 {
-    font-size: 1.5rem;
+  .brand h1 {
+    font-size: 1.6rem;
   }
 
   .badge {
@@ -156,6 +108,18 @@
     width: 40px;
     height: 40px;
     font-size: 14px;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  .right {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
   }
 }
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Sidebar from "./sidebar/Sidebar";
-import ActualHeader from "./actualheader/ActualHeader";
+import MainHeader from "./mainheader/MainHeader";
 import Header from "./header/Header";
 import NairaConversion from "./conversion/NairaConversion";
 import PotentialGrowth from "./growth/PotentialGrowth";
@@ -20,7 +20,7 @@ export default function Dashboard() {
       />
 
       <main className={styles.mainContent}>
-        <ActualHeader setOpen={setSidebarOpen} />
+        <MainHeader setOpen={setSidebarOpen} />
         <Header />
         <div className={styles.gridContainer}>
           
