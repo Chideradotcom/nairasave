@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
-import Welcome from './pages/welcome/Welcome';
-import Dashboard from './pages/dashboard/Dashboard';
+import { Routes, Route } from "react-router-dom";
+import Welcome from "./pages/welcome/Welcome";
+import Dashboard from "./pages/dashboard/Dashboard";
 import "./App.css";
 
 function App() {
@@ -13,4 +13,3 @@ function App() {
 }
 
 export default App;
-
