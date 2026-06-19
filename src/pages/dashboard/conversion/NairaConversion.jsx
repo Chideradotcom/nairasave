@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from './NairaConversion.module.css';
 
-const EXCHANGE_RATE = 1600.00;
+const EXCHANGE_RATE = 1550.00;
 
 function CurrencyBadge({ code, variant }) {
     const indicatorClass = variant === 'usd' ? styles.currencyIndicatorUsd : styles.currencyIndicatorNgn;
