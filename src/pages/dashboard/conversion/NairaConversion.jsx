@@ -1,5 +1,5 @@
 // NairaConversion.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './NairaConversion.module.css';
 
 const EXCHANGE_RATE = 1550.00;
